@@ -130,7 +130,7 @@ html {
     "footer   footer";
   }
 
-   .header{
+  .header{
     grid-area: header;
   }
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructurado</title>
+    <style>
+        *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 100%;
+            height: 100vh;
+            background-color: #222;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-responsive{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px/*tamaño minimo*/, 33%/*tamaño maximo*/));
+            gap : 1vh .5vw;
+            align-items: center;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="container grid-responsive">
+        <article class="item">
+            <p>Grid Item 1</p>
+        </article>
+        <article class="item">
+            <p>Grid Item 2</p>
+        </article>
+        <article class="item">
+            <p>Grid Item 3</p>
+        </article>
+    </section>
+</body>
+</html>
